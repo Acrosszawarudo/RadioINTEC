@@ -237,13 +237,13 @@
          tooltip="Haz clic en este cuadro para continuar" />
 
 		 <hotspot name="spot1"
-         url="images/target_green_white.png"
+         url="images/target_red_white.png"
          onloaded="do_crop_animation(128,128,60);"
          visible="false"
-         ath="129.9047224" atv="8.1303439"
+         ath="-7.8927715" atv="4.5132385"
          scale="0.40"
          zoom="true"
-         onclick="loadscene(Studio, null, MERGE, BLEND(1));" />
+         onclick="loadscene(Radio, null, MERGE, BLEND(1));" />
 		
 	</scene>
 	
@@ -276,13 +276,13 @@
         "/>
 
 		<hotspot name="spot2"
-         url="images/target_green_white.png"
+         url="images/target_red_white.png"
          onloaded="do_crop_animation(128,128,60);"
          visible="false"
          ath="-35.4693183" atv="3.0043970"
          scale="0.40"
          zoom="true"
-         onclick="loadscene(Radio, null, MERGE, BLEND(1));" />
+         onclick="loadscene(Pasillo, null, MERGE, BLEND(1));" />
 
 	</scene>
 
@@ -315,7 +315,7 @@
         "/>
 
 		<hotspot name="spot3"
-         url="images/target_green_white.png"
+         url="images/target_red_white.png"
          onloaded="do_crop_animation(128,128,60);"
          visible="false"
          ath="-106.8211567" atv="15.8383364"
@@ -354,13 +354,13 @@
         "/>
 
 		<hotspot name="spot4"
-         url="images/target_green_white.png"
+         url="images/target_red_white.png"
          onloaded="do_crop_animation(128,128,60);"
          visible="false"
          ath="117.2086063" atv="9.5637976"
          scale="0.40"
          zoom="true"
-         onclick="loadscene(Pasillo, null, MERGE, BLEND(1));" />
+         onclick="loadscene(Cubiculo, null, MERGE, BLEND(1));" />
 
 	</scene>
 
@@ -376,14 +376,15 @@
 			<cube url="panos/Pasillo.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048,3840" />
 		</image>
 
-		<hotspot name="spot5"
-         url="images/target_green_white.png"
-         onloaded="do_crop_animation(128,128,60);"
-         visible="true"
-         ath="33.4565686" atv="6.5995235"
-         scale="0.40"
-         zoom="true"
-         onclick="loadscene(Cubiculo, null, MERGE, BLEND(1));" />
+		<hotspot name="Final_Cartel" 
+         url="images/Final_Cartel.png"
+         scale="0.5"
+         edge="center"
+         distorted="true"
+         ath="0" 
+         atv="0"
+         onclick="set(hotspot[Final_Cartel].visible, false);" 
+         tooltip="Haz clic en este cuadro para continuar" />
 
 	</scene>
 
@@ -416,38 +417,14 @@
         "/>
 
 		<hotspot name="spot6"
-         url="images/target_green_white.png"
+         url="images/target_red_white.png"
          onloaded="do_crop_animation(128,128,60);"
          visible="false"
          ath="-58.0120118" atv="4.4797996"
          scale="0.40"
          zoom="true"
-         onclick="loadscene(Recepcion2, null, MERGE, BLEND(1));" />
+         onclick="loadscene(Pasillo, null, MERGE, BLEND(1));" />
 
-	</scene>
-
-	<scene name="Recepcion2" title="Recepcion2" onstart="" thumburl="panos/Recepcion.tiles/thumb.jpg" lat="18.48777778" lng="-69.96291667" alt="36.00" heading="0.0">
-		
-		<control bouncinglimits="calc:image.cube ? true : false" />
-
-		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
-
-		<preview url="panos/Recepcion.tiles/preview.jpg" />
-
-		<image>
-			<cube url="panos/Recepcion.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,1024,2048,3840" />
-		</image>
-
-		<hotspot name="Final_Cartel" 
-         url="images/Final_Cartel.png"
-         scale="0.5"
-         edge="center"
-         distorted="true"
-         ath="0" 
-         atv="0"
-         onclick="set(hotspot[Final_Cartel].visible, false);" 
-         tooltip="Haz clic en este cuadro para continuar" />
-		
 	</scene>
 
 </krpano>
