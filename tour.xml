@@ -423,7 +423,7 @@
          ath="-58.0120118" atv="4.4797996"
          scale="0.40"
          zoom="true"
-         onclick="loadscene(Pasillo, null, MERGE, BLEND(1));" />
+         onclick="loadscene(Studio, null, MERGE, BLEND(1));" />
 
 	</scene>
 
