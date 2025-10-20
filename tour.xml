@@ -268,7 +268,6 @@
          zoom="true"
          onclick="loadscene(Radio, null, MERGE, BLEND(1));" />
 		
-
 	</scene>
 
 	<scene name="Radio" title="Radio" onstart="" thumburl="panos/Radio.tiles/thumb.jpg" lat="18.48777778" lng="-69.96291667" alt="36.00" heading="0.0">
